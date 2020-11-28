@@ -67,7 +67,7 @@ public class Mapper {
 
   @Override
   public String toString() {
-    String str = "";
+    String str = "\n";
 
     for(Pair p : pairs) {
       str += p;

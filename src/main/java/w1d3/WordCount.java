@@ -41,7 +41,6 @@ public class WordCount {
         }
       }
     }
-    System.out.println("");
   }
 
   public int getPartition(String key){

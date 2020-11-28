@@ -9,8 +9,11 @@ public class Application {
       System.out.println("Mapper " + i + " Input:");
       Mapper mapper = new Mapper();
       mapper.map("assets/input" + (i + 1) + ".txt");
-      System.out.println("Mapper " + i + " Output: \n" + mapper);
       wordCount.getMappers()[i] = mapper;
+    }
+    for (int i = 0; i < WordCount.m; i++) {
+      Mapper mapper = wordCount.getMappers()[i];
+      System.out.print("Mapper " + i + " Output: " + mapper);
     }
     wordCount.shuffleSort();
     wordCount.createReducerGroupByPairs();
